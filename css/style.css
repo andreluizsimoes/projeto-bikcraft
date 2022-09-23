@@ -1,0 +1,14 @@
+html{
+  scroll-behavior: smooth;
+}
+
+body {  
+  margin: 0px;  
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+}
