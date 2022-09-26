@@ -1,0 +1,32 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding-bottom: 600px;
+  color: #111111;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0px;
+}
+
+ul {
+  padding: opx;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
