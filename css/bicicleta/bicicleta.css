@@ -1,0 +1,170 @@
+.bicicleta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+#bicicleta .titulo > p {
+  text-transform: uppercase;
+}
+
+.bicicleta-imagens {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.bicicleta-imagens img {
+  flex: 1;
+  min-width: 200px;
+}
+
+.bicicleta-imagens img:first-child {
+  min-width: 100%;
+}
+
+.bicicleta-conteudo > p {
+  margin-bottom: 32px;
+}
+
+.bicicleta-comprar {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  justify-items: start;
+  gap: 8px 12px;
+  margin-bottom: 40px;
+}
+
+.bicicleta-comprar a {
+  grid-row: span 2;
+}
+
+.bicicleta-comprar span {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: var(--cor-12);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.bicicleta-conteudo h2 {
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 0.015em;
+}
+
+.bicicleta-informacoes,
+.bicicleta-ficha {
+  background-color: var(--cor-12);
+  padding: 32px;
+  border-radius: 5px;
+}
+
+.bicicleta-informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.bicicleta-informacoes img {
+  max-width: 24px;
+  margin-bottom: 8px;
+}
+
+.bicicleta-informacoes h3 {
+  margin-bottom: 8px;
+}
+
+.bicicleta-ficha li {
+  padding: 4px 0;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--cor-11);
+}
+
+.bicicleta-ficha li:last-child {
+  border-bottom: none;
+}
+
+.bicicleta-seguro-bg {
+  background-color: var(--cor-11);
+  box-shadow: inset 0 120px var(--cor-0), inset 0 -120px var(--cor-12);
+}
+
+.bicicleta-seguro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.bicicleta-seguro-conteudo {
+  padding-top: 180px;
+  padding-bottom: 180px;
+}
+
+.bicicleta-seguro-conteudo h2 {
+  margin-bottom: 32px;
+}
+
+.bicicleta-seguro-conteudo p {
+  margin-bottom: 20px;
+}
+
+.bicicleta-seguro-imagem img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 800px) {
+  .bicicleta {
+    grid-template-columns: 1fr;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+
+  .bicicleta-imagens {
+    grid-row: 2;
+  }
+
+  .bicicleta-conteudo > p {
+    margin-bottom: 16px;
+  }
+
+  .bicicleta-seguro-bg {
+    box-shadow: inset 0 -60px var(--cor-12);
+  }
+
+  .bicicleta-seguro {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicleta-seguro-conteudo {
+    grid-row: 1;
+    padding-top: 40px;
+    padding-bottom: 0px;
+  }
+
+  .bicicleta-seguro-imagem {
+    max-width: 400px;
+    height: 100%;
+    justify-self: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .bicicleta-comprar {
+    grid-template-columns: 1fr;
+    margin-bottom: 32px;
+  }
+
+  .bicicleta-informacoes {
+    grid-template-columns: 1fr;
+  }
+}
