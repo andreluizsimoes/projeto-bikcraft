@@ -17,7 +17,8 @@ h2,
 h3,
 p,
 ul,
-blockquote {
+blockquote,
+dd {
   margin: 0px;
 }
 
