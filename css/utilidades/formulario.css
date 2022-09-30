@@ -14,6 +14,47 @@
   grid-column: span 2;
 }
 
+.form input[type="checkbox"] {
+  appearance: none;
+  background: var(--cor-1);
+  border: 1px solid var(--cor-2);
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form input[type="checkbox"]::before {
+  content: "";
+  position: absolute;
+  width: 6px;
+  height: 14px;
+  outline: none;
+  border-right: 3px solid var(--cor-12);
+  border-bottom: 3px solid var(--cor-12);
+  transform: rotate(45deg);
+  top: 5px;
+  transition: all 600ms ease-in-out;
+  opacity: 0;
+}
+
+.form input[type="checkbox"]:checked::before {
+  opacity: 1;
+}
+
+.form input[type="checkbox"]:focus {
+  outline: none;
+  border: 1px solid var(--cor-p1);
+  /* border-color: var(--cor-p1); */
+  background-color: var(--cor-0);
+  box-shadow: 0 0 0 2px #fea;
+}
+
 .form input[type="text"],
 .form input[type="email"],
 .form input[type="number"],
@@ -26,7 +67,7 @@
   padding: 12px;
   width: 100%;
   box-sizing: border-box;
-  resize: none
+  resize: none;
 }
 
 .form input[type="text"]:focus,
@@ -39,7 +80,6 @@
   background-color: var(--cor-0);
   box-shadow: 0 0 0 2px #fea;
 }
-
 
 @media (max-width: 600px) {
   .form {
