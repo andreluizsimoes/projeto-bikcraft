@@ -15,6 +15,9 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
   </head>
   <body id="bicicletas">
     <header class="header-bg">
@@ -39,11 +42,11 @@
       </div>
 
       <div class="bicicletas container">
-        <div class="bicicletas-imagem">
+        <div class="bicicletas-imagem fadeInLeft" data-anime="200">
           <img src="/img/bicicletas/nimbus.jpg" width="1120" height="680" alt="Bicicleta preta" />
           <span class="font-2-m cor-0">R$ 4999</span>
         </div>
-        <div class="bicicletas-conteudo">
+        <div class="bicicletas-conteudo fadeInRight" data-anime="400">
           <h2 class="font-1-xl cor-11">Nimbus Stark</h2>
           <p class="font-2-s cor-8">
             A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios,
@@ -67,7 +70,7 @@
               Rastreador
             </li>
           </ul>
-          <a class="btn seta" href="/bicicletas/nimbus.html">Mais sobre</a>
+          <a class="btn seta" href="./bicicletas/nimbus.html">Mais sobre</a>
         </div>
       </div>
 
@@ -101,7 +104,7 @@
                 Rastreador
               </li>
             </ul>
-            <a class="btn seta" href="/bicicletas/magic.html">Mais sobre</a>
+            <a class="btn seta" href="./bicicletas/magic.html">Mais sobre</a>
           </div>
         </div>
       </div>
@@ -135,7 +138,7 @@
               Rastreador
             </li>
           </ul>
-          <a class="btn seta" href="/bicicletas/nebula.html">Mais sobre</a>
+          <a class="btn seta" href="./bicicletas/nebula.html">Mais sobre</a>
         </div>
       </div>
     </main>
@@ -179,5 +182,7 @@
         <p class="footer-copy font-2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
       </div>
     </footer>
+    <script src="./js/plugins/simple-anime.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
